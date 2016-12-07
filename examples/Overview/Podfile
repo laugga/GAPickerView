@@ -1,3 +1,5 @@
-platform :ios, '5.1'
+platform :ios, '7.0'
 
-pod "LAUPickerView", '~> 0.1.0'
+target "LAUPickerViewOverview" do
+  pod "LAUPickerView", :path => '../../'
+end

@@ -1,0 +1,16 @@
+PODS:
+  - LAUPickerView (0.2.0)
+
+DEPENDENCIES:
+  - LAUPickerView (from `../../`)
+
+EXTERNAL SOURCES:
+  LAUPickerView:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  LAUPickerView: ffa88866b136ba04c8b06889fa79b3e305c222de
+
+PODFILE CHECKSUM: f8234e527e4ed926e4f25ee382af20e7adcb2978
+
+COCOAPODS: 1.1.1

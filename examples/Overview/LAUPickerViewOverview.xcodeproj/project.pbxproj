@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38E8F9A51DF8240F00DC9620 /* tick.caf in Resources */ = {isa = PBXBuildFile; fileRef = 38E8F9A41DF8240F00DC9620 /* tick.caf */; };
+		38E8F9A71DF8247E00DC9620 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E8F9A61DF8247E00DC9620 /* AVFoundation.framework */; };
+		63D2F459698EC6FE2D224D33 /* libPods-LAUPickerViewOverview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CBF2580535DD32CC62843C /* libPods-LAUPickerViewOverview.a */; };
 		A01822BC187625DB00E38975 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01822BB187625DB00E38975 /* QuartzCore.framework */; };
 		A0445E161874826A007BC506 /* libLAUPickerView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BCA05D1874744D00FC20CE /* libLAUPickerView.a */; };
 		A06ACB2A1608B2C300E20441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06ACB291608B2C300E20441 /* UIKit.framework */; };
@@ -64,8 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CE9283DF242282969FA8F87 /* Pods-LAUPickerViewOverview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAUPickerViewOverview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LAUPickerViewOverview/Pods-LAUPickerViewOverview.debug.xcconfig"; sourceTree = "<group>"; };
 		3807FF841DD2133700C4FC1F /* LAUPickerViewOverview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LAUPickerViewOverview-Prefix.pch"; path = "support/LAUPickerViewOverview-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		3807FF851DD2133E00C4FC1F /* LAUPickerViewOverview-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "LAUPickerViewOverview-Info.plist"; path = "support/LAUPickerViewOverview-Info.plist"; sourceTree = SOURCE_ROOT; };
+		38E8F9A41DF8240F00DC9620 /* tick.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = tick.caf; path = resources/tick.caf; sourceTree = SOURCE_ROOT; };
+		38E8F9A61DF8247E00DC9620 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45CBF2580535DD32CC62843C /* libPods-LAUPickerViewOverview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LAUPickerViewOverview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59BCA89DB0934D9D2142FD8A /* Pods-LAUPickerViewOverview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAUPickerViewOverview.release.xcconfig"; path = "Pods/Target Support Files/Pods-LAUPickerViewOverview/Pods-LAUPickerViewOverview.release.xcconfig"; sourceTree = "<group>"; };
 		A01822BB187625DB00E38975 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A01C02411620D9BA003DA76F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A039A769161F8C08009E4C10 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -102,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E8F9A71DF8247E00DC9620 /* AVFoundation.framework in Frameworks */,
 				A0A09B481877067900855DD5 /* AudioToolbox.framework in Frameworks */,
 				A01822BC187625DB00E38975 /* QuartzCore.framework in Frameworks */,
 				A0445E161874826A007BC506 /* libLAUPickerView.a in Frameworks */,
@@ -109,12 +118,22 @@
 				A06ACB2A1608B2C300E20441 /* UIKit.framework in Frameworks */,
 				A06ACB2C1608B2C300E20441 /* Foundation.framework in Frameworks */,
 				A06ACB2E1608B2C300E20441 /* CoreGraphics.framework in Frameworks */,
+				63D2F459698EC6FE2D224D33 /* libPods-LAUPickerViewOverview.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CDE8FB3E6EA64F63D10F8EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CE9283DF242282969FA8F87 /* Pods-LAUPickerViewOverview.debug.xcconfig */,
+				59BCA89DB0934D9D2142FD8A /* Pods-LAUPickerViewOverview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A06ACB1A1608B2C200E20441 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +144,7 @@
 				A07AD46917E07F1900A3F735 /* Dependencies */,
 				A06ACB281608B2C300E20441 /* Frameworks */,
 				A06ACB261608B2C300E20441 /* Products */,
+				6CDE8FB3E6EA64F63D10F8EC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +159,7 @@
 		A06ACB281608B2C300E20441 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38E8F9A61DF8247E00DC9620 /* AVFoundation.framework */,
 				A0A09B471877067900855DD5 /* AudioToolbox.framework */,
 				A01822BB187625DB00E38975 /* QuartzCore.framework */,
 				A06ACB6A160A0FF300E20441 /* CoreText.framework */,
@@ -147,6 +168,7 @@
 				A06ACB2D1608B2C300E20441 /* CoreGraphics.framework */,
 				A039A769161F8C08009E4C10 /* SenTestingKit.framework */,
 				A01C02411620D9BA003DA76F /* CoreFoundation.framework */,
+				45CBF2580535DD32CC62843C /* libPods-LAUPickerViewOverview.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -239,6 +261,7 @@
 		A0F1A4F616302EE4002E6BE5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				38E8F9A41DF8240F00DC9620 /* tick.caf */,
 				A0C5194A188057DA00FE03D2 /* Icon files */,
 				A0C5194B188057E200FE03D2 /* Default */,
 				A0C5194F1880585600FE03D2 /* en.lproj */,
@@ -254,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06ACB461608B2C300E20441 /* Build configuration list for PBXNativeTarget "LAUPickerViewOverview" */;
 			buildPhases = (
+				E4CAFF731A089BDE5F9DE71A /* [CP] Check Pods Manifest.lock */,
 				A06ACB211608B2C300E20441 /* Sources */,
 				A06ACB221608B2C300E20441 /* Frameworks */,
 				A06ACB231608B2C300E20441 /* Resources */,
+				AE80F2B370821B50F7D8F4D1 /* [CP] Embed Pods Frameworks */,
+				E1211F1AF87536D072933D1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +302,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Luis Laugga";
+				TargetAttributes = {
+					A06ACB241608B2C300E20441 = {
+						DevelopmentTeam = JJC3QT2D2L;
+					};
+				};
 			};
 			buildConfigurationList = A06ACB1F1608B2C200E20441 /* Build configuration list for PBXProject "LAUPickerViewOverview" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -338,6 +369,7 @@
 				A0C519611880585600FE03D2 /* ViewController_iPad.xib in Resources */,
 				A0C519681880585600FE03D2 /* icon-144.png in Resources */,
 				A0C5195F1880585600FE03D2 /* Default@2x.png in Resources */,
+				38E8F9A51DF8240F00DC9620 /* tick.caf in Resources */,
 				A0C519671880585600FE03D2 /* icon-120.png in Resources */,
 				A0C5195E1880585600FE03D2 /* Default.png in Resources */,
 				A0C5195D1880585600FE03D2 /* Default-568h@2x.png in Resources */,
@@ -346,6 +378,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE80F2B370821B50F7D8F4D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LAUPickerViewOverview/Pods-LAUPickerViewOverview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1211F1AF87536D072933D1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LAUPickerViewOverview/Pods-LAUPickerViewOverview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4CAFF731A089BDE5F9DE71A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A06ACB211608B2C300E20441 /* Sources */ = {
@@ -424,7 +504,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +531,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +541,9 @@
 		};
 		A06ACB471608B2C300E20441 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE9283DF242282969FA8F87 /* Pods-LAUPickerViewOverview.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = JJC3QT2D2L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -470,8 +552,8 @@
 				GCC_PREFIX_HEADER = "support/LAUPickerViewOverview-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "support/LAUPickerViewOverview-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = LAUPickerViewOverview;
 				WRAPPER_EXTENSION = app;
 			};
@@ -479,8 +561,10 @@
 		};
 		A06ACB481608B2C300E20441 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59BCA89DB0934D9D2142FD8A /* Pods-LAUPickerViewOverview.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = JJC3QT2D2L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -489,8 +573,8 @@
 				GCC_PREFIX_HEADER = "support/LAUPickerViewOverview-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "support/LAUPickerViewOverview-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = LAUPickerViewOverview;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
