@@ -25,12 +25,11 @@
  
 */
 
-#import <Foundation/Foundation.h>
-#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface LAUPickerTableInputSound : NSObject
 {
-    SystemSoundID _inputSoundId;
+    AVAudioPlayer * _audioPlayer;
 }
 
 + (LAUPickerTableInputSound *)sharedPickerTableInputSound;
